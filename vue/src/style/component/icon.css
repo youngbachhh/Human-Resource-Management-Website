@@ -1,0 +1,290 @@
+:root {
+    --sprite-image: url('../../assets/img/Sprites.64af8f61.svg');
+    --logo: url(../../assets/icon/favicon.ico);
+    --icon__error: -817px -145px;
+    --icon__close: -147px -147px;
+    --icon__help: -89px -145px;
+    --icon__loading: -1098px -146px;
+    --icon__warning--blank: -752px -462px;
+    --icon__warning--blank-20: -538px -146px;
+    --icon__error--blank-20: -593px -145px;
+    --icon__success--blank-20: -482px -146px;
+    --icon__warning--exist: -598px -463px;
+    --icon__warning--confirm: -832px -462px;
+    --icon__burger: -847px -35px;
+    --icon__delete: -464px -313px;
+    --icon__nav: -428px -92px;
+    --icon__dropdown--white: -564px -365px;
+    --icon__dropdown--blue: -900px -365px;
+    --icon__notification: -788px -30px;
+    --icon__search: -1041px -89px;
+    --icon__reload: -493px -31px;
+    --icon__overall: -33px -1630px;
+    --icon__money: -78px -1631px;
+    --icon__spending: -121px -1633px;
+    --icon__buying: -165px -1632px;
+    --icon__selling: -206px -1631px;
+    --icon__management: -254px -1632px;
+    --icon__warehouse: -294px -1632px;
+    --icon__tool: -339px -1633px;
+    --icon__asset: -382px -1632px;
+    --icon__tax: -427px -1634px;
+    --icon__price: -470px -1633px;
+    --icon__synthetic: -514px -1632px;
+    --icon__budget: -382px -1664px;
+    --icon__report: -592px -1631px;
+    --icon__analysis: -207px -1667px;
+    --icon__export: -1265px -90px;
+    --icon__check: -1225px -363px;
+}
+
+.m-icon-search {
+    background-image: url(../../assets/icon/search.png);
+}
+
+.m-icon-dashboard {
+    background-image: url(../../assets/icon/dashboard.png);
+}
+
+.m-icon-16 {
+    background-size: 16px 16px;
+}
+
+.icon {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon__wrapper {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon__warning--blank {
+    width: 36px;
+    height: 36px;
+    background: var(--sprite-image) no-repeat var(--icon__warning--blank);
+}
+
+.icon__loading {
+    width: 20px;
+    height: 21px;
+    background: var(--sprite-image) no-repeat var(--icon__loading);
+}
+
+.icon__warning--blank-20 {
+    width: 20px;
+    height: 20px;
+    background: var(--sprite-image) no-repeat var(--icon__warning--blank-20);
+}
+
+.icon__success--blank-20 {
+    width: 20px;
+    height: 20px;
+    background: var(--sprite-image) no-repeat var(--icon__success--blank-20);
+}
+
+.icon__error--blank-20 {
+    width: 20px;
+    height: 20px;
+    background: var(--sprite-image) no-repeat var(--icon__error--blank-20);
+}
+
+.icon__warning--exist {
+    width: 36px;
+    height: 36px;
+    background: var(--sprite-image) no-repeat var(--icon__warning--exist);
+}
+
+.icon__warning--confirm {
+    width: 36px;
+    height: 36px;
+    background: var(--sprite-image) no-repeat var(--icon__warning--confirm);
+}
+
+
+.icon__error {
+    width: 36px;
+    height: 36px;
+    background: var(--sprite-image) no-repeat var(--icon__error);
+}
+
+.icon__delete {
+    width: 15px;
+    height: 15px;
+    background: var(--sprite-image) no-repeat var(--icon__delete);
+}
+
+.icon__help {
+    width: 22px;
+    height: 22px;
+    background: var(--sprite-image) no-repeat var(--icon__help);
+}
+
+.icon__close {
+    width: 18px;
+    height: 18px;
+    background: var(--sprite-image) no-repeat var(--icon__close);
+}
+
+.icon__user {
+    width: 32px;
+    height: 32px;
+    background-image: url(../../assets/img/default-avatar.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.menu-icon {
+    width: 24px;
+    height: 24px;
+    background-image: url(../../assets/icon/dashboard.png);
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+.icon__toggle {
+    width: 16px;
+    height: 16px;
+    background: var(--sprite-image) no-repeat var(--icon__nav);
+}
+
+.icon__burger {
+    width: 16px;
+    height: 14px;
+    background: var(--sprite-image) no-repeat var(--icon__burger);
+}
+
+.icon__notification {
+    width: 22px;
+    height: 25px;
+    background: var(--sprite-image) no-repeat var(--icon__notification);
+
+}
+
+.icon__dropdown--white {
+    width: 8px;
+    height: 5px;
+    background: var(--sprite-image) no-repeat var(--icon__dropdown--white);
+}
+
+.icon__dropdown--blue {
+    width: 8px;
+    height: 5px;
+    background: var(--sprite-image) no-repeat var(--icon__dropdown--blue);
+}
+
+
+.icon__reload {
+    width: 22px;
+    height: 24px;
+    background: var(--sprite-image) no-repeat var(--icon__reload);
+}
+
+.icon__export {
+    width: 23px;
+    height: 20px;
+    background: var(--sprite-image) no-repeat var(--icon__export);
+}
+
+.icon__check {
+    width: 14px;
+    height: 11px;
+    background: var(--sprite-image) no-repeat var(--icon__check);
+}
+
+.icon__overall {
+    width: 18px;
+    height: 20px;
+    background: var(--sprite-image) no-repeat var(--icon__overall);
+}
+
+.icon__money {
+    width: 14px;
+    height: 19px;
+    background: var(--sprite-image) no-repeat var(--icon__money);
+}
+
+.icon__spending {
+    width: 16px;
+    height: 16px;
+    background: var(--sprite-image) no-repeat var(--icon__spending);
+}
+
+.icon__buying {
+    width: 16px;
+    height: 18px;
+    background: var(--sprite-image) no-repeat var(--icon__buying);
+}
+
+.icon__selling {
+    width: 20px;
+    height: 18px;
+    background: var(--sprite-image) no-repeat var(--icon__selling);
+}
+
+.icon__management {
+    width: 14px;
+    height: 17px;
+    background: var(--sprite-image) no-repeat var(--icon__management);
+}
+
+.icon__warehouse {
+    width: 18px;
+    height: 17px;
+    background: var(--sprite-image) no-repeat var(--icon__warehouse);
+}
+
+.icon__tool {
+    width: 18px;
+    height: 17px;
+    background: var(--sprite-image) no-repeat var(--icon__tool);
+}
+
+.icon__asset {
+    width: 17px;
+    height: 18px;
+    background: var(--sprite-image) no-repeat var(--icon__asset);
+}
+
+.icon__tax {
+    width: 16px;
+    height: 16px;
+    background: var(--sprite-image) no-repeat var(--icon__tax);
+}
+
+.icon__price {
+    width: 17px;
+    height: 17px;
+    background: var(--sprite-image) no-repeat var(--icon__price);
+}
+
+.icon__synthetic {
+    width: 16px;
+    height: 18px;
+    background: var(--sprite-image) no-repeat var(--icon__synthetic);
+}
+
+.icon__budget {
+    width: 16px;
+    height: 16px;
+    background: var(--sprite-image) no-repeat var(--icon__budget);
+}
+
+.icon__report {
+    width: 14px;
+    height: 13px;
+    background: var(--sprite-image) no-repeat var(--icon__report);
+}
+
+.icon__analysis {
+    width: 17px;
+    height: 14px;
+    background: var(--sprite-image) no-repeat var(--icon__analysis);
+}

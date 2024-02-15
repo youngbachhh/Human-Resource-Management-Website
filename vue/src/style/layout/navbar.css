@@ -1,0 +1,30 @@
+.navbar {
+    width: 200px;
+    height: 100%;
+    background-color: #424242;
+    flex-shrink: 0;
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column;
+}
+
+.navbar .menu-item {
+    display: flex;
+    padding-left: 12px;
+    margin-bottom: 4px;
+    height: 44px;
+    align-items: center;
+}
+
+.navbar .menu-item:hover {
+    background-color: #616161;
+    cursor: pointer;
+}
+
+
+
+.navbar .menu-item .menu-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}

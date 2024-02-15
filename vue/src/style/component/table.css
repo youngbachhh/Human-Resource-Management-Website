@@ -1,0 +1,251 @@
+.table-container {
+  width: inherit;
+  height: calc(100vh - 56px - 48px - 48px - 32px - 16px - 16px - 56px);
+  overflow: auto;
+}
+
+.m-table {
+  width: inherit;
+  border-collapse: collapse;
+  border-spacing: unset;
+  border: unset;
+  background-color: var(--background-color);
+}
+
+
+/* Css tooltip ở table danh sách nhân viên */
+.tooltip {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip:hover::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  opacity: 0.8;
+  white-space: nowrap;
+}
+
+
+/* CSS checkbox */
+
+.checkbox__item {
+  width: 14px;
+  height: 14px;
+}
+
+.checkbox__item .checkbox {
+  display: none;
+  position: absolute;
+}
+
+.checkbox__item .checkbox__label {
+  width: 14px;
+  height: 14px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.checkbox__item .checkbox__label::before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  border: 1px solid var(--disable-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.checkbox__item .icon__wrapper {
+  display: none;
+  position: absolute;
+  top: 28%;
+  left: 25%;
+}
+
+.checkbox__item .checkbox:checked+.checkbox__label {
+  z-index: 3;
+}
+
+/* th .checkbox__item .checkbox:checked+.checkbox__label+.icon__wrapper {
+  display: flex;
+}
+
+th .checkbox__item .checkbox:not(:checked)+.checkbox__label+.icon__wrapper {
+  display: none;
+} */
+
+
+
+
+
+
+
+.isChecked {
+  display: flex !important;
+}
+
+
+
+
+.m-table tr {
+  border-bottom: 1px solid var(--background-color);
+  height: 48px;
+}
+
+
+
+
+
+tr td, tr th{
+  border-right: 1px solid var(--border-color);
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.m-table tr th:nth-last-child(1),
+.m-table tr td:nth-last-child(1) {
+  border-right: 0px;
+}
+
+.m-table .text-align-left {
+  text-align: left;
+}
+
+.m-table .text-align-right {
+  text-align: right;
+}
+
+.m-table .text-align-center {
+  text-align: center;
+}
+
+
+
+
+
+.edit__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-text {
+  margin-right: 4px;
+}
+
+tr .text-align-center {
+  position: relative;
+}
+
+.m-table th {
+  background-color: rgb(188, 212, 185);
+  position: sticky;
+  z-index: 1;
+  top: 0px;
+}
+
+
+.edit__dropdown__list {
+  display: none;
+  width: 150px;
+  position: absolute;
+  top: 80%;
+  right: 0px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+}
+
+
+.edit__dropdown__item {
+  padding-left: 8px;
+  width: 150px;
+  height: 30px;
+  display: flex;
+  background-color: var(--background-color);
+  align-items: center;
+  cursor: pointer;
+
+}
+
+
+
+.edit__dropdown__item:hover {
+  background-color: rgb(228, 233, 231);
+
+}
+
+.edit__dropdown__item:hover .edit__dropdown__text {
+  color: var(--hover-color);
+
+}
+
+
+.edit__dropdown__text {
+  color: var(--primary-text-color);
+}
+
+.show-dropdown {
+  display: block;
+}
+
+
+
+tr th:nth-child(1), tr td:nth-child(1) {
+  position: sticky;
+  left: 0;
+}
+
+tr th:nth-child(2), tr td:nth-child(2) {
+  position: sticky;
+  left: 48px;
+}
+
+tr th:nth-last-child(1) {
+  position: sticky;
+  right: 0;
+  z-index: 4;
+}
+
+tr td:nth-last-child(1) {
+  position: sticky;
+  right: 0;
+  z-index: 3;
+}
+
+tr td:nth-child(1), tr td:nth-child(2) {
+  z-index: 3;
+
+} 
+
+tr th:nth-child(1), tr th:nth-child(2) {
+  z-index: 4;
+}
+
+tbody td {
+  background-color: var(--background-color);
+}
+
+.m-table tr:hover td{
+  background-color: #fff8cb !important;
+  cursor: pointer;
+}
+
+.checkedColor td{
+  background-color: #ffeb6b !important;
+}
+
+.text-align-center:hover .edit__dropdown__list {
+  display: block;
+  z-index: 100;
+}

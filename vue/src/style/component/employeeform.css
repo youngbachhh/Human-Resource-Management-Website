@@ -1,0 +1,248 @@
+.employee-form {
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+}
+
+
+.isShowDialog {
+    visibility: visible !important;
+}
+
+.container-form {
+    min-width: 900px;
+    height: fit-content;
+    border-radius: 5px;
+    background-color: var(--background-color);
+    border: 1px solid #e0e0e0;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+
+.header-popup {
+    display: flex;
+    align-items: center;
+}
+
+.popup--header {
+    width: 900px;
+    height: 61px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup--title {
+    padding: 24px 24px 12px 24px;
+}
+
+
+
+.component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 33px;
+}
+
+.popup--header .popup--title .header-popup .title-popup {
+    font-size: 24px;
+    height: 33px;
+    line-height: 33px;
+}
+
+.slot-label {
+    padding-left: 8px;
+}
+
+.slot-label .content {
+    font-size: 14px;
+}
+
+
+/* Icon header  */
+
+.container-form .popup-close {
+    display: flex;
+    width: 78px;
+    height: 100%;
+    padding-right: 24px;
+    padding-top: 12px;
+}
+
+.popup-close .help-btn {
+    margin-right: 6px;
+}
+
+
+/* Infor */
+
+
+.main-content {
+    display: flex;
+}
+
+.m-tooltip {
+    font-weight: 400;
+    padding-bottom: 8px;
+}
+
+.title-popup {
+    font-weight: bold;
+}
+
+.left-info,
+.right-info {
+    width: 50%;
+}
+
+.left-info {
+    padding-right: 36px;
+}
+
+.popup-content {
+    padding: 0 24px 16px;
+}
+
+.multi-info__wrapper {
+    display: flex;
+}
+
+
+.m-input__title {
+    display: flex;
+}
+
+.input__title__require {
+    color: red;
+}
+
+
+
+
+
+
+
+.row-input {
+    margin-top: 18px;
+    padding-bottom: 8px;
+    height: 65px;
+}
+
+.radio-container {
+    display: flex;
+    align-items: center;
+    height: 29px;
+
+}
+
+.radio-label {
+    margin-right: 24px;
+}
+
+.extra-content {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+
+/* Footer */
+
+.footer-container {
+    padding: 0 24px 16px;
+}
+
+.popup-footer-button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-group-button-popup {
+    display: flex;
+}
+
+.first-right-button {
+    margin-right: 8px;
+}
+
+.first-right-button:hover {
+    background-color: var(--border-color);
+}
+
+.second-right-button {
+    background-color: var(--main-color);
+    color: #f7f7f7;
+    margin-right: 0px;
+}
+
+
+.second-right-button:hover {
+    background-color: var(--hover-color);
+}
+
+.left-group-button-popup:hover {
+    background-color: var(--border-color);
+}
+
+
+.align-right {
+    display: flex;
+}
+
+/* Radio Button */
+
+.radio-container {
+    display: flex;
+    align-items: center;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.radio-input {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    margin-right: 5px;
+}
+
+.radio-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.radio-input input[type="radio"] {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.radio-input input[type="radio"]:checked+.radio-inner {
+    background-color: var(--click-color);
+}
